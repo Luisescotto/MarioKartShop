@@ -1,0 +1,254 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.d-none {
+    display: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url(img/fondoazul.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body.backgroundred {
+    background: url(img/fondorojo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body.backgroundgreen {
+    background: url(img/fondoverde.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 10vh;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    list-style: none;
+}
+
+.nav-item a {
+    color: #001b46;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.active a {
+    color: #ffffff !important;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+}
+
+.active::after {
+    content: ".";
+    font-size: 40px;
+    color: #ffffff;
+    position: absolute;
+    top: 5px;
+    left: 60px;
+}
+
+.cart img {
+    width: 100%;
+}
+
+.user-div {
+    height: 10vh;
+    display: flex;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2em;
+}
+
+.user-div .user {
+    align-items: center;
+    justify-content: center;
+}
+
+.user-div .user a {
+    display: flex;
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+}
+
+.user-div .user a p {
+    background-color: #08bc62;
+    font-size: 11px;
+    font-weight: bold;
+    padding: .5em;
+    border: 2px solid #06934c;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+}
+
+.user-div .user a b {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+.user-div .cart img {
+    width: 5vw;
+}
+
+
+main {
+    display: flex;
+    padding: 2em;
+    height: 70vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-item {
+    flex: 40%;
+}
+
+.img-item img {
+    width: 80%;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    max-height: 60vh;
+    flex: 30%;
+}
+
+.description-header small {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: #1f52b8;
+}
+
+.description-header h1 {
+    margin: -.2em 0 0 0;
+    padding: 0;
+    font-size: 80px;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+.color-selectors {
+    display: flex;
+    color: #ffffff;
+    gap: 1em;
+    align-items: baseline;
+    justify-content: start;
+    padding: .5em 0;
+}
+
+.blue {
+    accent-color: #000;
+    appearance: none;
+    padding: 5px;
+    background-color: #1f52b8;
+    border: 2px solid #dcdcdc;
+    border-radius: 50%;
+}
+
+.blue:checked {
+    background-color: #14377e;
+    border: 2px solid #ffffff;
+}
+
+.red {
+    accent-color: #000;
+    appearance: none;
+    padding: 5px;
+    background-color: #e90e06;
+    border: 2px solid #dcdcdc;
+    border-radius: 50%;
+}
+
+.red:checked {
+    background-color: rgb(128, 0, 0);
+    border: 2px solid #ffffff;
+}
+
+.green {
+    accent-color: #000;
+    appearance: none;
+    padding: 5px;
+    background-color: green;
+    border: 2px solid #dcdcdc;
+    border-radius: 50%;
+}
+
+.green:checked {
+    background-color: rgb(1, 70, 1);
+    border: 2px solid #ffffff;
+}
+
+.description p {
+    color: #ffffff;
+    font-size: 8px;
+    font-weight: 300;
+    line-height: 1.5em;
+    text-align: left;
+    padding-bottom: 1.5em;
+}
+
+
+.description-footer {
+    display: flex;
+    justify-content: start;
+    gap: 1em;
+    height: 5vh;
+    align-items: center;
+}
+
+.price {
+    color: #ffffff;
+}
+
+.price small {
+    color: #1f52b8;
+}
+
+.description-footer button {
+    background-color: #1f52b8;
+    padding: .4em;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    transition: all .5s ease;
+    -ms-transform: skewX(-20deg);
+    -webkit-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+
+.description-footer button:hover {
+    background-color: #163a82;
+}
