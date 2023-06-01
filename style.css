@@ -62,11 +62,11 @@ nav {
 
 .active::after {
     content: ".";
-    font-size: 40px;
+    font-size: 5em;
     color: #ffffff;
     position: absolute;
-    top: 5px;
-    left: 60px;
+    top: .1em;
+    left: .7em;
 }
 
 .cart img {
@@ -99,17 +99,17 @@ nav {
 
 .user-div .user a p {
     background-color: #08bc62;
-    font-size: 11px;
+    font-size: 1em;
     font-weight: bold;
     padding: .5em;
     border: 2px solid #06934c;
     border-radius: 50%;
-    width: 15px;
-    height: 15px;
+    width: 1.5em;
+    height: 1.5em;
 }
 
 .user-div .user a b {
-    font-size: 14px;
+    font-size: 1.2em;
     font-weight: 500;
 }
 
@@ -143,7 +143,7 @@ main {
 }
 
 .description-header small {
-    font-size: 20px;
+    font-size: 2.5em;
     font-weight: bold;
     margin: 0;
     padding: 0;
@@ -153,7 +153,7 @@ main {
 .description-header h1 {
     margin: -.2em 0 0 0;
     padding: 0;
-    font-size: 80px;
+    font-size: 8em;
     font-weight: 900;
     color: #ffffff;
 }
@@ -211,7 +211,7 @@ main {
 
 .description p {
     color: #ffffff;
-    font-size: 8px;
+    font-size: 1em;
     font-weight: 300;
     line-height: 1.5em;
     text-align: left;
@@ -239,7 +239,7 @@ main {
     background-color: #1f52b8;
     padding: .4em;
     border: none;
-    font-size: 14px;
+    font-size: 1.5em;
     font-weight: bold;
     color: #ffffff;
     cursor: pointer;
